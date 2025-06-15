@@ -31,10 +31,10 @@
 html,
 body {
   height: 100%;
-
+  padding: .5rem;
 }
 .grid-container {
-  max-width: 130rem;
+  max-width: 132rem;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr auto;

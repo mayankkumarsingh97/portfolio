@@ -60,7 +60,6 @@ const styles = {
   },
   h1container: {
     width: "100%",
-
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
@@ -75,7 +74,7 @@ const styles = {
     fontWeight: "800",
     fontFamily: "var(--font-Sync)",
     lineHeight: "8rem",
-    letterSpacing:"2rem",
+    letterSpacing: "2rem",
     position: "relative",
   },
   wave: {
