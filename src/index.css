@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+    background-color: #000000;
+  /* Button Colors */
+  --primary-color: #fff;
+  --secondary-color: "blue";
+
+  /* Font Colors */
+  --text-primary: #333;
+  --text-secondary: #666;
+  --btn-text: white;
+
+  /* Font Sizes */
+  --font-small: 1.4rem;
+  --font-medium: 1.6rem;
+  --font-large: 1.8rem;
+  /* Font Heading */
+  --font-heading: 4rem;
+  /* Font Family */
+  --font-Poppins: "Poppins";
+  --font-Sync: "Sync";
+
+  /* // */
+}
+
+html,
+body {
+  height: 100%;
+
+}
+.grid-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "hero"
+    "footer";
+  height: 100vh;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+

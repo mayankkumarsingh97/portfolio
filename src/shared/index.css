@@ -1,0 +1,138 @@
+/* /////////////////////////// */
+/* ///// Application Card CSS //// */
+/* /////////////////////////// */
+.image-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background-image: linear-gradient(35deg, #cbcbcb7a, #f19898, #9796967a);
+  border-radius: 2rem;
+}
+
+.image-card-container .image,
+.image-card-container .details {
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+}
+
+.image-card-container .image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.image-card-container .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-card-container .details h2 {
+  font-family: var(--font-Sync);
+  font-size: var(--font-heading);
+}
+
+.image-card-container .details p {
+  font-family: var(--font-Poppins);
+  font-size: var(--font-large);
+  margin-top: 1.6rem;
+}
+
+.image-card-container .details .details-cta {
+  margin-top: 1.6rem;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+.ml-10 {
+  margin-left: 1rem;
+}
+/* /////////////////////////// */
+.btn-tertiary {
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+/* /// */
+@media (max-width: 768px) {
+  .image-card-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .image-card-container .image,
+  .image-card-container .details {
+    width: 100%;
+  }
+}
+/* ///////////////////////////////////////////////////////////// */
+/* /////////////////////Blog Card ///////////////////////////////*/
+/* ///////////////////////////////////////////////////////////// */
+
+.blog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 1rem;
+  background-color: #000000;
+}
+
+.blog-image img {
+  width: 28.6rem;
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.blog-info {
+  flex: 1;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-date {
+  font-size: 1.8rem;
+  font-family: Poppins;
+  color: #CBCBCB;
+}
+
+.blog-title {
+  font-size: 4rem;
+  margin: 0.5rem 0;
+  color:#fff;
+  font-family: var(--font-Sync);
+}
+
+.blog-tags {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tag-btn {
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 5rem;
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+.blog-action .read-btn {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
