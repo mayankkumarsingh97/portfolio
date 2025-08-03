@@ -42,6 +42,9 @@ const MainLayout = () => {
           text="FIGMA"
         />
       </main>
+      <section>
+        <h2 style={{color:'#000',textAlign:"center",padding:'20px',background:"#fff"}}>I am on feat/dev-user-auth Branch</h2>
+      </section>
       <footer className="footer">
         <Footer />
       </footer>
