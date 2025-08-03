@@ -40,6 +40,7 @@
     flex-wrap: wrap;
     margin-top: 1rem;
     justify-content: flex-start;
+    display: none;
   }
 
   .header nav a {
@@ -48,6 +49,7 @@
     margin-bottom: 0.5rem;
     display: inline-block;
   }
+ 
 }
 /* ////////////////////////// */
 /* Expertize Card Layout Css */
