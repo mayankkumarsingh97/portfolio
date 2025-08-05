@@ -1,6 +1,6 @@
 {
   "name": "Creatiwise",
-  "homepage": "https://<USERNAME>.github.io/portfolio",
+  "homepage": "https://mayankkumarsingh97.github.io/portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,9 @@
     "dev": "webpack --config webpack.dev.js",
     "prod": "webpack  --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js --open",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "jest": {
     "testEnvironment": "jest-environment-jsdom",
