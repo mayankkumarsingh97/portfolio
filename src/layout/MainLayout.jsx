@@ -48,7 +48,7 @@ const MainLayout = () => {
             background: "#fff",
           }}
         >
-          I am on Main Branch
+          I am on Main Branch MB
         </h2>
       </section>
       <footer className="footer">
