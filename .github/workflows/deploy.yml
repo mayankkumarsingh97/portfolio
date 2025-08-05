@@ -1,17 +1,25 @@
-name: Build and Deploy React App to GitHub Pages
+name: Build and Deploy Webpack App to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Trigger on push to main branch
+      - main  # change if your default branch is different
 
 jobs:
-  build-deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Cache npm dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -19,13 +27,13 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm ci --lagacy-peer-deps
 
-      - name: Build the React app
-        run: npm run build
+      - name: Build using Webpack
+        run: |
+          npx webpack --mode production
 
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          npm run deploy
+        run: npm run deploy
