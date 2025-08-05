@@ -9,7 +9,7 @@
     "prod": "webpack  --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js --open",
     "test": "jest",
-    "predeploy": "npm run build",
+    "predeploy": "webpack  --config webpack.prod.js",
     "deploy": "gh-pages -d build"
   },
   "jest": {
