@@ -6,7 +6,7 @@ This is a personal portfolio website built using **React.js** and bundled with *
 
 ## 🔧 Tech Stack
 
-- ⚛️ React
+- ⚛️ React 18
 - 📦 Webpack 5
 - 💅 CSS3
 - 🔤 Babel
