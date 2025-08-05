@@ -48,7 +48,7 @@ const MainLayout = () => {
             background: "#fff",
           }}
         >
-          I am on feat/dev-user-auth Branch
+          I am on Main Branch
         </h2>
       </section>
       <footer className="footer">
