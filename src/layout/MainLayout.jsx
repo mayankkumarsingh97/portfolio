@@ -9,7 +9,7 @@ import BlogCardContainer from "../shared/BlogCardContainer";
 import Hero from "../shared/Hero";
 import Faq from "../components/Faq";
 import Marquee from "../components/Marquee";
-import STAR from '../assets/icons/Star.png'
+import STAR from "../assets/icons/Star.png";
 import "./index.css";
 //
 const MainLayout = () => {
@@ -37,14 +37,24 @@ const MainLayout = () => {
         </div>
         <HeadingCard heading="Frequently asked questions" className="mt-20" />
         <Faq />
-        <Marquee
-          imageSrc={STAR}
-          text="FIGMA"
-        />
+        <Marquee imageSrc={STAR} text="FIGMA" />
       </main>
+      <section>
+        <h2
+          style={{
+            color: "#000",
+            textAlign: "center",
+            padding: "20px",
+            background: "#fff",
+          }}
+        >
+          I am on feat/dev-user-auth Branch
+        </h2>
+      </section>
       <footer className="footer">
         <Footer />
       </footer>
+      
     </div>
   );
 };
