@@ -54,6 +54,7 @@ const MainLayout = () => {
       <footer className="footer">
         <Footer />
       </footer>
+      
     </div>
   );
 };
