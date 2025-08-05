@@ -39,22 +39,10 @@ const MainLayout = () => {
         <Faq />
         <Marquee imageSrc={STAR} text="FIGMA" />
       </main>
-      <section>
-        <h2
-          style={{
-            color: "#000",
-            textAlign: "center",
-            padding: "20px",
-            background: "#fff",
-          }}
-        >
-          I am on Main Branch MB
-        </h2>
-      </section>
+
       <footer className="footer">
         <Footer />
       </footer>
-      
     </div>
   );
 };
