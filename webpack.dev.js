@@ -1,6 +1,8 @@
 const Dotenv = require("dotenv-webpack");
+const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const commonConfig = require("./webpack.common");
+const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
 const path = require("path");
 //
@@ -8,13 +10,12 @@ const path = require("path");
 module.exports = merge(commonConfig, {
   mode: "development",
   devServer: {
-    static: {
-      directory: path.join(__dirname, "./build"),
-    },
+    static: "./build",
     port: 3000,
-    hot: true,
-    open: true,
-    liveReload: false,
+    // hot: true,
+    // historyApiFallback: true,
+    // open: true,
+    // liveReload: false,
   },
   module: {
     rules: [
@@ -29,5 +30,11 @@ module.exports = merge(commonConfig, {
       },
     ],
   },
-  plugins: [new Dotenv()],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new ReactRefreshWebpackPlugin(),
+    new Dotenv(),
+  ],
 });
+
+

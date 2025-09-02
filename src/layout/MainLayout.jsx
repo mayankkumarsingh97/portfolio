@@ -39,6 +39,7 @@ const MainLayout = () => {
         <Faq />
         <Marquee imageSrc={STAR} text="FIGMA" />
       </main>
+
       <footer className="footer">
         <Footer />
       </footer>
