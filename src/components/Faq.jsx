@@ -12,8 +12,13 @@ const Faq = () => {
         interactive models of the design for testing. In the test phase, I
         collect feedback from users to refine the design.
       </p>
-      <h4 style={styles.h4}>What tools and software do you use for UX design?</h4>
-      <h4 style={styles.h4}>How do you measure the success of your UX designs?</h4>
+      <h4 style={styles.h4}>
+        What tools and software do you use for UX design?
+      </h4>
+      <h4 style={styles.h4}>
+        How do you measure the success of your UX designs?
+      </h4>
+      <h4 style={styles.h4}>How Web development work ?</h4>
     </div>
   );
 };
@@ -27,13 +32,13 @@ const styles = {
   h4: {
     color: "#FFFFFF",
     fontSize: "3.2rem",
-    marginTop:"2rem"
+    marginTop: "2rem",
   },
   desc: {
     color: "#CBCBCB",
     fontFamily: "var(--font-Poppins)",
     fontSize: "1.8rem",
     fontWeight: "400",
-    margin:"2rem 0"
+    margin: "2rem 0",
   },
 };
