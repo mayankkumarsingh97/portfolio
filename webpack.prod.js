@@ -29,6 +29,13 @@ module.exports = merge(commonConfig, {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[name].[contenthash][ext]",
+        },
+      },
     ],
   },
   plugins: [
@@ -46,21 +53,24 @@ module.exports = merge(commonConfig, {
       ],
     }),
     new CompressionPlugin(),
-    new ImageMinimizerPlugin({
-      minimizer: {
-        implementation: ImageMinimizerPlugin.imageminMinify,
-        options: {
-          plugins: [
-            ["imagemin-mozjpeg", { quality: 75 }],
-            ["imagemin-optipng", { optimizationLevel: 5 }],
-          ],
-        },
-      },
-    }),
   ],
   optimization: {
     minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin(),
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            plugins: [
+              ["mozjpeg", { quality: 60 }],
+              ["pngquant", { quality: [0.4, 0.5] }],
+            ],
+          },
+        },
+      }),
+    ],
     usedExports: true,
   },
 });
