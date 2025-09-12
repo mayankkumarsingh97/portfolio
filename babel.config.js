@@ -7,6 +7,4 @@ module.exports = {
   plugins: process.env.NODE_ENV === 'development' ? ['react-refresh/babel'] : [],
 };
 //
-//I have made some changes on remote of feat/dev-user-auth branch 
-//
-// In babel file
+
