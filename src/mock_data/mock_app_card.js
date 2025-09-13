@@ -25,15 +25,15 @@ export const data = [
       a2: "WEB",
     },
   },
-  // {
-  //   id: 3,
-  //   image: IMG3,
-  //   heading: "Fortknox Application",
-  //   desc: "With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.",
-  //   buttonTextPrimary: "View Case Study",
-  //   buttonTextSecondary: {
-  //     a1: "APP",
-  //     a2: "WEB",
-  //   },
-  // },
+  {
+    id: 3,
+    image: IMG3,
+    heading: "Fortknox Application",
+    desc: "With user-centered approach, the goals was to create an intuitive interface for enhanced financial intelligence.",
+    buttonTextPrimary: "View Case Study",
+    buttonTextSecondary: {
+      a1: "APP",
+      a2: "WEB",
+    },
+  },
 ];
