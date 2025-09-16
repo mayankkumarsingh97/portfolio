@@ -21,6 +21,13 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
+  cache: true,
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
+
   module: {
     rules: [
       // JS / TS
