@@ -54,7 +54,7 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    width: "100%",
+    
     background: "#000",
     padding: "10rem 0",
   },

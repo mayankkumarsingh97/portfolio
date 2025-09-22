@@ -27,7 +27,9 @@ const ApplicationCard = ({ item, className }) => {
             <ButtonSecondary text={a2} className="ml-10" />
           </div>
         </div>
-        <ButtonPrimary text={buttonTextPrimary} />
+        <div >
+          <ButtonPrimary text={buttonTextPrimary} className='mt-20'/>
+        </div>
       </section>
     </div>
   );

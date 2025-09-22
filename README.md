@@ -1,19 +1,33 @@
-# 🚀 My Portfolio Website
+# ⚡ Static React Website with Custom Webpack
 
-This is a personal portfolio website built using **React.js** and bundled with **Webpack**. It showcases my projects, skills, and contact information.
+A lightweight, high-performance static website built using React and a fully customized Webpack configuration. Designed for scalability, multilingual support, and optimized asset handling.
 
----
+## 🚀 Features
 
-## 🔧 Tech Stack
+- ⚛️ React with functional components and hooks
+- 🛠️ Custom Webpack setup (no CRA)
+- 📦 Code splitting and persistent caching
+- 🌐 Multilingual support (optional)
+- 🎯 Optimized for performance and SEO
+- 🧪 Jest + React Testing Library setup
 
-- ⚛️ React 18
-- 📦 Webpack 5
-- 💅 CSS3
-- 🔤 Babel
-- 🌐 HTML5
-- 🚀 Deployed on GitHub Pages 
+## 📁 Project Structure
 
----
+├── public/ # Static assets ├── src/ │ ├── components/ # Reusable UI components │ ├── hooks/ # Custom React hooks │ ├── i18n/ # Localization setup (optional) │ ├── styles/ # Global and modular styles │ └── index.tsx # Entry point ├── webpack/ │ ├── webpack.common.js │ ├── webpack.dev.js │ └── webpack.prod.js ├── babel.config.js ├── tsconfig.json └── README.m
 
-## 📁 Folder Structure//
+## 🧰 Scripts
 
+```bash
+# Development build
+npm run dev
+
+# Production build
+npm run build
+
+# Preview production build
+npm run serve
+
+# Run tests
+npm test
+
+```
