@@ -12,6 +12,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "browserslist": [
+    "> 0.25%",
+    "not dead",
+    "IE 11"
+  ],
   "jest": {
     "testEnvironment": "jest-environment-jsdom",
     "transform": {
