@@ -18,6 +18,7 @@ export default ListCard;
 //
 const styles = {
   listCardContainer: {
+    width:"100%",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",

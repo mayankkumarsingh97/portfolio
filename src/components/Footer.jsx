@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.left}>
-        © Rehan Raihan - 2023
+        © Mayank kumar - 2025
       </div>
       <div style={styles.right}>
         <a href="#Dribbble" style={styles.link}>Dribbble</a>

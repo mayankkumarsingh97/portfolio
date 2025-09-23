@@ -8,8 +8,8 @@ const ExpertizeContainer = () => {
     <div className="card-layout">
       {expertize_data.map((item) => {
         return (
-          <div className="card-list">
-            <Expertize key={item.id} item={item} />
+          <div className="card-list" key={item.id}>
+            <Expertize item={item} />
           </div>
         );
       })}

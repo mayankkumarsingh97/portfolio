@@ -1,29 +1,28 @@
 import React from "react";
 import ButtonPrimary from "../components/molicules/ButtonPrimary";
 import ButtonSecondary from "../components/molicules/ButtonSecondary";
-//
-const BlogCard = ({ item, className }) => {
-  const {
-    id,
-    image,
-    heading,
-    buttonText: { a, b },
-    date,
-  } = item;
+
+const BlogCard = ({ item, className = "" }) => {
+  if (!item) return null;
+
+  const { image, heading, buttonText = {}, date } = item;
+
+  const { a = "", b = "" } = buttonText;
+
   return (
-    <div className={`blog-card ${className}`}>
+    <div className={`blog-card ${className}`.trim()}>
       {/* Left: Image */}
       <div className="blog-image">
-        <img src={image} alt="blog" />
+        <img src={image} alt={heading || "blog"} />
       </div>
 
       {/* Middle: Info */}
       <div className="blog-info">
-        <span className="blog-date">{date}</span>
-        <h2 className="blog-title">{heading}</h2>
+        {date && <span className="blog-date">{date}</span>}
+        {heading && <h2 className="blog-title">{heading}</h2>}
         <div className="blog-tags">
-          <ButtonSecondary text={a} />
-          <ButtonSecondary text={b} />
+          {a && <ButtonSecondary text={a} />}
+          {b && <ButtonSecondary text={b} />}
         </div>
       </div>
 
