@@ -1,4 +1,3 @@
-import React from "react";
 import "./header/index.css";
 import Expertize from "./Expertize";
 import expertize_data from "../mock_data/mock_expertize";

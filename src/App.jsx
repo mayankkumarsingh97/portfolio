@@ -1,6 +1,4 @@
-import React from "react";
 import "./index.css";
-
 import ErrorBoundary from "./shared/error/ErrorBoundery";
 import Home from "./pages/Home";
 //

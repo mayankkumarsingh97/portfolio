@@ -1,5 +1,3 @@
-import React from "react";
-
 const Marquee = ({ imageSrc, text }) => {
   return (
     <div style={styles.marqueeContainer}>
