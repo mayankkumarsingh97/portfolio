@@ -1,4 +1,3 @@
-import React from "react";
 import STAR from "../assets/icons/Star.png";
 //
 const HeadingCard = ({ heading, isViewAll, className }) => {

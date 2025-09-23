@@ -1,5 +1,3 @@
-import React from "react";
-
 import "../../index.css"
 const ButtonTertiary = ({ text, link }) => {
   return <div className="btn-tertiary">{text}</div>;
