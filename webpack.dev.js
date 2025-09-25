@@ -3,6 +3,8 @@ const webpack = require("webpack");
 const { merge } = require("webpack-merge");
 const commonConfig = require("./webpack.common");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
 //
 //
 module.exports = merge(commonConfig, {
@@ -18,5 +20,6 @@ module.exports = merge(commonConfig, {
     new webpack.HotModuleReplacementPlugin(),
     new ReactRefreshWebpackPlugin(),
     new Dotenv(),
+    new BundleAnalyzerPlugin(),
   ],
 });
