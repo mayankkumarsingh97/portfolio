@@ -1,4 +1,3 @@
-import React from "react";
 //
 const ListCard = (item) => {
   const { heading, subheading, date } = item.item;

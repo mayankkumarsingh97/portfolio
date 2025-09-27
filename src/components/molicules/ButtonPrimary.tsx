@@ -1,4 +1,3 @@
-import React from "react";
 const ButtonPrimary = ({ text, loading, onClick, disabled, className }) => {
   return (
     <button

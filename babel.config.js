@@ -1,9 +1,19 @@
-// module.exports = {
-//   presets: ["@babel/preset-env", "@babel/preset-react"]
-// };
-// babel.config.js
 module.exports = {
-  presets: [["@babel/preset-env", { targets: "> 0.25%, not dead, IE 11" }]],
+  presets: [
+    [
+      "@babel/preset-env",
+      // {
+      //   "useBuiltIns": "usage",
+      //   "corejs": "3.26",
+      // },
+    ],
+    [
+      "@babel/preset-react",
+      {
+        runtime: "automatic",
+      },
+    ],
+  ],
   plugins:
     process.env.NODE_ENV === "development" ? ["react-refresh/babel"] : [],
 };

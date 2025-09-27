@@ -2,7 +2,11 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
+      paths-ignore:
+       - '.github/workflows/**'
+       - 'README.md'
+       - 'docs/**'
+      branches:
       - main
 
 permissions:
@@ -18,7 +22,7 @@ jobs:
 
       - name: Build project
         run: |
-          npm install --legacy-peer-deps
+          npm ci
           npm run build
 
       - name: Deploy to GitHub Pages

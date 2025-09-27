@@ -1,4 +1,3 @@
-import React from "react";
 import "./header/index.css";
 import DOT from "../assets/icons/dot.png";
 //

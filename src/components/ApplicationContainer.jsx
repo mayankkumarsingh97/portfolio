@@ -1,4 +1,3 @@
-import React from "react";
 import { data } from "../mock_data/mock_app_card";
 import ApplicationCard from "../shared/ApplicationCard";
 //

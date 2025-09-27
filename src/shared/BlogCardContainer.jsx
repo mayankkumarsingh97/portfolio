@@ -1,4 +1,3 @@
-import React from "react";
 import blogdatalist from "../mock_data/mock_blog_card";
 import BlogCard from "./BlogCard";
 //

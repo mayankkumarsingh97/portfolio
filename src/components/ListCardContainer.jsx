@@ -1,4 +1,3 @@
-import React from "react";
 import listCard from "../mock_data/mock_list_card";
 import ListCard from "./ListCard";
 //

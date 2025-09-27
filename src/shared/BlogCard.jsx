@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonPrimary from "../components/molicules/ButtonPrimary";
 import ButtonSecondary from "../components/molicules/ButtonSecondary";
 
