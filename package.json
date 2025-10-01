@@ -9,6 +9,7 @@
     "build": "webpack  --config webpack.prod.js",
     "serve": "webpack-dev-server --config webpack.dev.js --open",
     "test": "jest",
+    "start": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -41,6 +42,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.8.2",
+    "serve": "^14.2.5",
     "webpack-merge": "^6.0.1"
   },
   "devDependencies": {

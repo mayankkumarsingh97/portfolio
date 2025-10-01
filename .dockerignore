@@ -1,0 +1,26 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Build artifacts (will be re-created)
+build
+dist
+coverage
+
+# Git files
+.git
+.gitignore
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# OS / Editor files
+.DS_Store
+*.swp
+*.log
+
+# Environment & secrets
+.env
+.env.local
