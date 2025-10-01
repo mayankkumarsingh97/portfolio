@@ -1,22 +1,35 @@
-# Use Node.js 18.16.0 base image
-FROM node:18.16.0
+# Stage 1: Build React app
+FROM node:22-slim AS builder
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy only package.json + lock for caching
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install  --production
+RUN npm ci --legacy-peer-deps 
 
-# Copy the rest of the application code
+# Copy the rest of the code
 COPY . .
+
+# Build React app
 RUN npm run build
-# Set the environment to production
-ENV NODE_ENV=production
-# Expose the application port (e.g., 3000)
+
+
+# Stage 2: Minimal Node.js image for serving
+FROM node:22-slim
+
+WORKDIR /app
+
+# Install 'serve' globally (tiny static file server)
+RUN npm install -g serve
+
+# Copy only the build folder from builder stage
+COPY --from=builder /app/build ./build
+
+# Expose port 3000
 EXPOSE 3000
 
-# Define the command to run your application
-CMD ["npm", "start"]
+# Serve React build folder
+CMD ["serve", "-s", "build", "-l", "3000"]
+
