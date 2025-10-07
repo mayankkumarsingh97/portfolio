@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --config webpack.dev.js",
-    "build": "webpack  --config webpack.prod.js",
-    "serve": "webpack-dev-server --config webpack.dev.js --open",
+    "dev:serve": "webpack serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "build:serve": "npm run build && serve -s build -l 3000",
     "test": "jest",
-    "start": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
